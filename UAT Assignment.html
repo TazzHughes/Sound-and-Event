@@ -1,0 +1,95 @@
+<!--
+    Tazeri Hughes
+    10/3/22
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Link Javascript file to HTML so they will work together-->
+    <script src="Looped.js"></script>
+    <!--Page Name-->
+    <title>UAT Space Program</title>
+</head>
+<!--Background color set-->
+<body style="background-color: grey;">
+    <!--UAT Space Logo-->
+    <img src="UATspaceLogo.jpg" alt="UATspaceLogo">
+    <!--Styling heading 1-->
+    <h1 style="color: rgb(29, 29, 83);">UAT Space Program</h1>
+    
+<!--Add start button that once cliced plays audio-->
+    <input type="button" value="Start" onclick="playAudio();"/>
+    <!--Stop button that should stop audio-->
+    <input type="button" value="Stop" onclick="stopAudio();"/>
+
+    <p style="color: purple;font-weight: 300;font-size: larger;">
+
+        Countdown: <span id="DisplayCountdown"></span>
+        <script>
+//Alert to prepare users for blastoff
+            alert("Prepare For Blast Off!")
+
+            //Setting countdown at 10
+        var Countdown = 10;
+        
+        document.getElementById("DisplayCountdown").innerHTML = Countdown;
+        
+        //countdown starting at 10 minus 1
+        Countdown = Countdown - 1;
+        
+        document.getElementById("DisplayCountdown").innerHTML = Countdown;
+        
+        //countdown at 9 minus 1
+        Countdown--;
+        
+        document.getElementById("DisplayCountdown").innerHTML = Countdown;
+        
+        //countdown at 8 minus 1
+        Countdown--;
+        
+        document.getElementById("DisplayCountdown").innerHTML = Countdown;
+        
+        //countdown at 7 minus 1
+        Countdown--;
+        
+        document.getElementById("DisplayCountdown").innerHTML = Countdown;
+        
+        //countdown at 6 minus 1
+        Countdown--;
+        
+        document.getElementById("DisplayCountdown").innerHTML = Countdown;
+        
+        //countdown at 5 minus 1
+        Countdown--;
+        
+        document.getElementById("DisplayCountdown").innerHTML = Countdown;
+        
+        //countdown at 4 minus 1
+        Countdown--;
+        
+        document.getElementById("DisplayCountdown").innerHTML = Countdown;
+        
+        //countdown at 3 minus 1
+        Countdown--;
+        
+        document.getElementById("DisplayCountdown").innerHTML = Countdown;
+        
+        //countdown at 2 minus 1
+        Countdown--;
+        
+        document.getElementById("DisplayCountdown").innerHTML = Countdown;
+        
+        //countdown at 1 minus 1 which is the end of the countdown
+        Countdown--;
+        
+        //countdown completion prints Blast Off!
+        document.getElementById("DisplayCountdown").innerHTML = "Blast Off!"
+        
+        </script>
+        
+        </p>
+</body>
+</html>
